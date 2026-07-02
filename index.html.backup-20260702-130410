@@ -1,0 +1,15 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Ron English Comic Book Covers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Ron English Comic Book Covers</h1>
+    <p>Comic book cover archive and catalogue support repository.</p>
+  </main>
+</body>
+</html>
