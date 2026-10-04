@@ -6,16 +6,137 @@
   <title>Comic Book Covers - Ron English Catalogue Raisonne</title>
   <link rel="stylesheet" href="../../css/styles.css" />
   <link rel="icon" type="image/png" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/favicon.png">
+<style id="comic-book-covers-index-layout-v1">
+/* Comic Book Covers landing-page normalization.
+   Header follows the catalogue Paintings landing-page presentation.
+   The cover array/order/content remains unchanged. */
+
+body {
+  background: #fff;
+}
+
+.comic-index-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px 0 4px;
+  text-align: center;
+}
+
+.comic-index-header .top-nav {
+  margin: 0 0 22px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.comic-index-header .nav-pill {
+  padding: 8px 14px;
+  border: 1px solid #d6e1ff;
+  border-radius: 999px;
+  background: #fff;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.comic-index-header .nav-pill:hover,
+.comic-index-header .nav-pill:focus {
+  background: #f3f6ff;
+}
+
+.comic-index-header h1 {
+  margin: 0 0 10px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.02em;
+  line-height: 1.05;
+}
+
+.comic-index-header .intro-text {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.comic-index-header .intro-text p {
+  max-width: none;
+  width: 100%;
+  margin: 0 auto 14px;
+  color: var(--muted);
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.index-layout {
+  max-width: 1100px;
+  padding-top: 8px;
+}
+
+.index-layout > .section-block > h2,
+.index-layout > .section-block > p {
+  text-align: center;
+}
+
+.gallery-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.gallery-card img {
+  height: 340px;
+  padding: 8px;
+  object-fit: contain;
+}
+
+.gallery-card-text {
+  padding: 12px 12px 16px;
+}
+
+@media (max-width: 980px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .gallery-card img {
+    height: 320px;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card img {
+    height: auto;
+    max-height: none;
+  }
+}
+</style>
 </head>
 <body>
-  <header class="site-header">
-    <h1>Comic Book Covers</h1>
-    <p>This series reimagines Ron English&#39;s own paintings, drawings, and characters as comic book covers. Existing works from across the catalogue provide the visual and conceptual source material, while Ron directs the titles, cover language, references, styling, and final selections. AI is used as part of the image-making process, allowing individual works and recurring characters from Ron&#39;s catalogue to be recast within a fictional comic-book publishing world.</p>
-    <nav class="top-nav">
-      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Main Catalogue</a>
+  <header class="site-header comic-index-header">
+    <nav class="top-nav" aria-label="Site navigation">
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/">Catalogue home</a>
       <a class="nav-pill" href="../../">Comic Book Covers Home</a>
-      <a class="nav-pill is-active" href="index.html">Cover Index</a>
+      <a class="nav-pill" href="https://ronenglish-archive.github.io/ron-english-catalogue-raisonne/search/">Search Catalogue</a>
     </nav>
+    <h1>Comic Book Covers</h1>
+    <div class="intro-text">
+      <p>This series reimagines Ron English&#39;s own paintings, drawings, and characters as comic book covers. Existing works from across the catalogue provide the visual and conceptual source material, while Ron directs the titles, cover language, references, styling, and final selections. AI is used as part of the image-making process, allowing individual works and recurring characters from Ron&#39;s catalogue to be recast within a fictional comic-book publishing world.</p>
+    </div>
   </header>
 
   <main class="index-layout">
