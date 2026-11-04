@@ -14,6 +14,17 @@
 .gallery-grid > .gallery-card .gallery-card-title { font-size:12px; line-height:1.3; overflow-wrap:anywhere; }
 @media (max-width:350px) { .gallery-grid { grid-template-columns:repeat(auto-fit, minmax(0, 132px)); gap:9px; } .gallery-grid > .gallery-card { width:132px; max-width:132px; } }
 </style>
+
+<!-- Owner-approved compact catalogue index layout; source: 7-page V2 / corrected 2-page V3 previews. -->
+<style id="ron-seven-approved-compact-v1">
+/* Preserve the published comic-card styling, only narrow the index and typography. */
+body .index-layout,body .site-header{max-width:760px!important;width:calc(100% - 24px)!important;margin-left:auto!important;margin-right:auto!important;box-sizing:border-box!important}
+body .site-header h1{font-size:26px!important;line-height:1.15!important}body .site-header p{font-size:12px!important;line-height:1.5!important}
+body .gallery-grid{justify-content:center!important;gap:12px!important}
+body .gallery-grid>.gallery-card{flex:0 0 142px!important;width:142px!important;max-width:142px!important;min-width:0!important}
+body .gallery-grid>.gallery-card img{width:100%!important;height:118px!important;max-height:118px!important;object-fit:contain!important}
+@media(max-width:350px){body .gallery-grid>.gallery-card{flex-basis:132px!important;width:132px!important;max-width:132px!important}}
+</style>
 </head>
 <body>
   <header class="site-header">
